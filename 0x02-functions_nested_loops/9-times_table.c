@@ -10,8 +10,9 @@ void times_table(void)
 int j, g;
 for (j = 0; j <= 9; j++)
 {
+g = 0;
 _putchar ('0');
-for (g = 0; g <= 9; g++)
+for (g = 1; g <= 9; g++)
 {
 if ((j * g) <= 9)
 {
