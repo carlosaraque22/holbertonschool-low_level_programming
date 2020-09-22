@@ -19,13 +19,12 @@ for (va = 0; va <= 9; va++)
 {
 if (d == 2)
 apple = 3;
-}
-_putchar (d + '0')
-_putchar (ca + '0')
-_putchar (':')
-_putchar (b + '0')
-_putchar (va + '0')
-_putchar ('\n')
+_putchar (d + '0');
+_putchar (ca + '0');
+_putchar (':');
+_putchar (b + '0');
+_putchar (va + '0');
+_putchar ('\n');
 }
 }
 }
