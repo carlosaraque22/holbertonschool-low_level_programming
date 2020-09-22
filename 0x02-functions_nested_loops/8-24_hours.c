@@ -7,7 +7,7 @@
  */
 void jack_bauer(void)
 {
-int d,ca,b,va,apple;
+int d, ca, b, va, apple;
 apple = 9;
 for (d = 0; d <= 2; d++)
 {
