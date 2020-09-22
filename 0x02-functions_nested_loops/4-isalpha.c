@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * int _isalpha(int c) - check the code for Holberton School students.
+ * _isalpha - check the code for Holberton School students.
  *
  * @c: c is the name of the variable.
  *
