@@ -11,11 +11,15 @@ int d,ca,b,va,apple;
 apple = 9;
 for (d = 0; d <= 2; d++)
 {
-for (ca = 0; ca <= 3; ca++)
+for (ca = 0; ca <= apple; ca++)
 {
 for (b = 0; b <= 5; b++)
 {
 for (va = 0; va <= 9; va++)
+{
+if (d == 2)
+apple = 3;
+}
 _putchar (d + '0')
 _putchar (ca + '0')
 _putchar (':')
@@ -26,4 +30,4 @@ _putchar ('\n')
 }
 }
 }
-
+}
