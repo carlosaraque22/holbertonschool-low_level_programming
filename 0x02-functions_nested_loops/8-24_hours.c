@@ -18,7 +18,9 @@ for (b = 0; b <= 5; b++)
 for (va = 0; va <= 9; va++)
 {
 if (d == 2)
+{
 apple = 3;
+}
 _putchar (d + '0');
 _putchar (ca + '0');
 _putchar (':');
