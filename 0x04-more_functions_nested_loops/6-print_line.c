@@ -15,6 +15,7 @@ for (n = n; n > 0; n--)
 {
 _putchar('_');
 }
+}
 _putchar('\n');
 }
-}
+
