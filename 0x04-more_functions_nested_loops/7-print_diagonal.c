@@ -21,7 +21,7 @@ for (i = 0; i < n; i++)
 {
 for (g = 0; g <= i; g++)
 {
-if (i==g)
+if (i == g)
 {
 _putchar('\\');
 _putchar('\n');
@@ -33,4 +33,4 @@ _putchar (' ');
 }
 }
 }
-} 
+}
