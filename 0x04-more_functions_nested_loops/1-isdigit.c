@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _isalpha - returns True if all characters in the string are alphabets. If not, it returns False..
+ * _isdigit - The isdigit function checks whether a character.
  *
  *@c: c is the name of the variable.
  *
