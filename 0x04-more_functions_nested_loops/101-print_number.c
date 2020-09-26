@@ -3,7 +3,7 @@
 /**
  * print_number - Prints an integer.
  *
- * @number: The name of the variale.
+ * @n: The name of the variale.
  *
  * Return: is not neccessary.
  */
@@ -17,7 +17,7 @@ _putchar('-');
 number = -number;
 }
 
-if ((number / 10) > 0)
+if ((n / 10) > 0)
 print_number(number / 10);
 _putchar((number % 10) + '0');
 }
