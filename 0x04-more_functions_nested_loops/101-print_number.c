@@ -17,7 +17,7 @@ _putchar('-');
 number = -number;
 }
 
-if ((n / 10) > 0)
+if ((number / 10) > 0)
 print_number(number / 10);
 _putchar((number % 10) + '0');
 }
