@@ -1,23 +1,27 @@
 #include "holberton.h"
 /**
- * print_rev - Entry point
+ * rev_string - Entry point
  * @s: char
  * Return: void (Success)
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int n;
+	int a, b;
+	char c;
 
-	n = 0;
-	while (*(s + n) != '\0')
+	b = 0;
+	while (*(s + b) != '\0')
 	{
-		n++;
+		b++;
 	}
-	n -= 1;
-	while (n >= 0)
+	a = 0;
+	b -= 1;
+	while (a < b)
 	{
-		_putchar(s[n]);
-		n--;
+		c = s[a];
+		s[a] = s[b];
+		s[b] = c;
+		a++;
+		b--;
 	}
-	_putchar('\n');
 }
