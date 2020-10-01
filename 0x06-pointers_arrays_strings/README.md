@@ -1,0 +1,1 @@
+moro pointers, arrays and strings. The more we learn the better
