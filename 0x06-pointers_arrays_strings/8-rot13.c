@@ -1,15 +1,18 @@
 #include "holberton.h"
+
 /**
- * leet - changes the letter
- * @s: the string to change
- * Return: a char pointer
+ * rot13 - changes the alphabet.
+ *
+ * @s: the string to change.
+ *
+ * Return: a char pointer.
  */
 
-char *leet(char *s)
+char *rot13(char *s)
 {
 	int i = 0, j = 0;
 	char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char ROOT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (*(s + i) != 0)
 	{
@@ -17,7 +20,7 @@ char *leet(char *s)
 		{
 			if (*(s + i) == letters[j])
 			{
-				*(s + i) = ROOT13[j];
+				*(s + i) = rot13[j];
 				break;
 			}
 		}
