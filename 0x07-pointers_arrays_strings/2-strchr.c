@@ -13,8 +13,12 @@ while (c != *s && *s != '\0')
 {
 s++;
 }
+if (*s == c)
 {
 return (s);
 }
-return ('\0');
+else
+{
+return (0);
+}
 }
