@@ -1,17 +1,18 @@
- 1#include "holberton.h"
-  2
- 3unsigned int _strspn(char *s, char *accept)
- {
-	        unsigned int j, i, len;
-              len = 0;
-	  for(j = 0; accept[j] != '\0'; j++)
-		   {
-			  if(s[i] == accept[j])
-				 
-					                        len++;
-			                 break;
-			    }
-	             if(s[i] != accept[j])
-	                       break;
-        return(len)
+#include "holberton.h"
+
+char *_strpbrk(char *s, char *accept)
+{
+	unsigned int j, i;
+	
+	for(i = 0; s[i] != '\0'; i++)
+	{
+		for(j = 0; accept[j] != '\0'; j++)
+		{
+			if(s[i] == accept[j])
+			{
+				return(s + i);
+			}
 		}
+	}
+	return('\0');
+}
