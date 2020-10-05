@@ -2,13 +2,9 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
-	for( i = 0; i != '\0'; i++)
-	{
-		if( c == s[i])
+		while(c != *s && *s != '\0')
 		{
-			break;
+			s++;
 		}
-	}
 	return(s);
 }
