@@ -1,5 +1,13 @@
 #include "holberton.h"
 
+/**
+ * _strspn - function
+ * @s: String
+ * @accept: Bytes
+ *
+ * Return: N
+ */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int j, i, len;
@@ -9,7 +17,7 @@ unsigned int _strspn(char *s, char *accept)
 	for(j = 0; accept[j] != '\0'; j++)
 	{
 		if(s[i] == accept[j])
-		{		
+		{
 			len++;
 		break;
 
