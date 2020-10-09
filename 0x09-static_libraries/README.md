@@ -1,1 +1,1 @@
-static libraries are a must
+Static libraries are a must
