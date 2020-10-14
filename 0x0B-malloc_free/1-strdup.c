@@ -28,10 +28,10 @@ char *_strdup(char *str)
 		if (d == NULL)
 	{
 		return (NULL);
-       	}
-	for (i = 0; i < ii; i++)
+	}
 		{
+			for (i = 0; i < ii; i++)
 			d[i] = str[i];
+			return (d);
 		}
-	return (d);
 }
