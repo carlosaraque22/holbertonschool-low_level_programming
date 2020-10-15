@@ -3,6 +3,24 @@
 #include <stdio.h>
 
 /**
+ * _strlen - a counter for the char s.
+ *
+ * @s: char.
+ *
+ * Return: the success.
+ */
+
+int _strlen(char *s)
+
+{
+	int i;
+
+	while (*(s + i) != 0)
+		i++;
+	return (i);
+}
+
+/**
  * string_nconcat - concatenated 2 string but n bytes of s2.
  *
  * @s1: string 1
@@ -48,20 +66,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		c[i + ii] = '\0';
 		return (c);
 	}
-}
-
-/**
- * _strlen - a counter for the char s.
- *
- * @s: char.
- *
- * Return: the success.
- */
-
-int _strlen(char *s)
-{
-	int i;
-
-	for(i = 0; s[i] != '\0'; i++)
-		return (i);
 }
