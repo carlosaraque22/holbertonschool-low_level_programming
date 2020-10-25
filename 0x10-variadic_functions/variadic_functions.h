@@ -10,15 +10,16 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
 /**
- * struct format - format of type struct
- * @c: char type c
- * @call_fun: function associated
+ *formate - Typedef struct formats
+ *struct formats - format to type print
+ *@index: index to type
+ *@func: pointer to function - function print
  */
 
-typedef struct format
+typedef struct formats
 {
-	char *c;
-	void (*call_fun)();
+	char *index;
+	void (*fun)(va_list valist);
 
-} formta_t;
+} formate;
 #endif
