@@ -19,7 +19,7 @@ void print_all(const char * const format, ...);
 typedef struct formats
 {
 	char *index;
-	void (*fun)(va_list valist);
+	void (*func)(va_list valist);
 
 } formate;
 #endif
