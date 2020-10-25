@@ -1,17 +1,12 @@
-	global _start
-	
 	section .text
-	
-_start:
-	mov eax, 0x4
-	mov ebx, 1
-	mov ecx, message
-	mov edx, message_length
+	global main
+main:
+	mov ebx,1
+	mov ecx,msg
+	mov edx,17
+	mov eax,4
 	int 0x80
-
-	mov eax, 0x1
-	mov ebx, 0
+	mov eax,0
 	int 0x80
-	section .data:
-message:	db "Hello, Holberton!", 0xA
-	message_length equ $-message
+	section .data
+	msg db 'Hello, Holberton',0xa
