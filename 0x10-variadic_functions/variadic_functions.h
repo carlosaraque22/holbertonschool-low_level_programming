@@ -10,8 +10,7 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
 /**
- *formate - Typedef struct formats
- *struct formats - format to type print
+ *struct formats - Typedef struct formats
  *@index: index to type
  *@func: pointer to function - function print
  */
