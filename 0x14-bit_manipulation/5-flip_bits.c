@@ -1,18 +1,24 @@
 #include "holberton.h"
+
 /**
- *clear_bit-sets the value of a bit to 0 at a given index.
- *@n: pointer to unsigned long integer
- *@index:  is the index, starting from 0 of the bit you want to set
- *
- *Return: 1 if it worked, or -1 if an error occurred
+ * flip_bits - return the difference between 2 numbers
+ * @n: number 1
+ * @m: number 2
+ * Return: count
  */
-int clear_bit(unsigned long int *n, unsigned int index)
+
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+	unsigned long int sum = 0;
+	unsigned int cont = 0;
 
-	if (index > sizeof(unsigned long int) * 8 || n == NULL)
-		return (-1);
+	sum = n ^ m;
 
-	*n = *n & ~(1 << index);
-	return (1);
-
+	while (sum > 0)
+	{
+		if (sum & 1)
+			cont++;
+		sum >>= 1;
+	}
+	return (cont);
 }
