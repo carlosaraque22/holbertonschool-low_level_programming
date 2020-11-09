@@ -6,11 +6,12 @@
 #include <unistd.h>
 
 /**
- * create_file - creates a file.
- * @filename: name of the file.
- * @text_content: a NULL terminated string.
+ * create_file - this function creates a file.
  *
- * Return:  1 on success, -1 on failure.
+ * @filename: this is the name of the file.
+ * @text_content: this is a NULL terminated string.
+ *
+ * Return: return 1 on success or -1 if fails.
  */
 int create_file(const char *filename, char *text_content)
 {
