@@ -7,10 +7,12 @@
 
 /**
  * r_error - Prints the read error and exit.
- * @file: pointer to a file name.
  *
- * Return: Nothing.
+ * @file: this is a pointer to a file name.
+ *
+ * Return: return is not neccessary.
  */
+
 void r_error(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
@@ -19,10 +21,12 @@ void r_error(char *file)
 
 /**
  * w_error - Prints the write error and exit.
- * @file: pointer to a file name.
  *
- * Return: Nothing.
+ * @file: this is a pointer to a file name.
+ *
+ * Return: return is not neccessary.
  */
+
 void w_error(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
@@ -31,10 +35,12 @@ void w_error(char *file)
 
 /**
  * c_error - Prints the close error and exit.
- * @b: bytes.
  *
- * Return: Nothing.
+ * @b: number of bytes.
+ *
+ * Return: return is not neccessary.
  */
+
 void c_error(int b)
 {
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", b);
@@ -43,10 +49,11 @@ void c_error(int b)
 
 /**
  * main - Entry point.
- * @argc: number of arguments
- * @argv: arguments
  *
- * Return: Always 0.
+ * @argc: the number of arguments.
+ * @argv: this is a pointer to pointer of arguments.
+ *
+ * Return: Always 0 (success).
  */
 int main(int argc, char **argv)
 {
