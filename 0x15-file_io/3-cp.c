@@ -28,3 +28,15 @@ void w_error(char *file)
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 	exit(99);
 }
+
+/**
+ * c_error - Prints the close error and exit.
+ * @b: bytes.
+ *
+ * Return: Nothing.
+ */
+void c_error(int b)
+{
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", b);
+	exit(100);
+}
