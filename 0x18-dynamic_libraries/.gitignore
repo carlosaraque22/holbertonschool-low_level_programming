@@ -1,2 +1,3 @@
-*.o
-*.c
+.o
+.c
+.gitignore
